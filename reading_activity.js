@@ -1,4 +1,7 @@
-
-function init() {
-	console.log("in this function");
+function init(){
+	$("#flipbook").turn({
+		width: 400,
+		height: 300,
+		autoCenter: true
+	});
 }
