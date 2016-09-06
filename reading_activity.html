@@ -2,16 +2,17 @@
 <html>
 
 <head>
-<link 
-<script type="text/javascript" src="reading_activity.js"></script>
+<!--<script type="text/javascript" src="reading_activity.js"></script> !-->s
 <script src= "jquery-3.1.0.min (1).js"></script> 
-<script src= "/turnjs4/lib/turn.min.js"></script>
+<script src= "turnjs4\lib\turn.min.js"></script>
 </head>
 
-<body onload="init()">
-
+<!--
+<body onload="init()"> 
+!-->
+<body>
 <div id="flipbook">
-	<div class="hard">
+	<div class="hard"> </div>
 	<div class="hard"></div>
 	<div> Page 1 </div>
 	<div> Page 2 </div>
@@ -21,5 +22,13 @@
 	<div class="hard"></div>
 </div>	
 </body>
+
+<script type="text/javascript">
+	$("#flipbook").turn({
+		width: 400,
+		height: 300,
+		autoCenter: true
+	});
+</script>
 
 </html>
