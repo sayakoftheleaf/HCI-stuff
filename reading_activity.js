@@ -1,3 +1,4 @@
+console.log ("test");
 function init(){
 	$("#flipbook").turn({
 		width: 400,
