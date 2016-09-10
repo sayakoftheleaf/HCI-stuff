@@ -1,8 +1,7 @@
-console.log ("test");
-function init(){
-	$("#flipbook").turn({
-		width: 400,
-		height: 300,
-		autoCenter: true
-	});
-}
+	window.onload = function(){
+		$("#flipbook").turn({
+			width: 400,
+			height: 300,
+			autoCenter: true
+		});
+	}
