@@ -1,7 +1,8 @@
 	window.onload = function(){
 		$("#flipbook").turn({
-			width: 400,
-			height: 300,
-			autoCenter: true
+			width: 1000,
+			height: 600,
 		});
 	}
+
+
