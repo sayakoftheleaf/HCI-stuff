@@ -1,6 +1,4 @@
-#title{
-	size: 200;
-}
+
 #flipbook .shadow,
 #flipbook.shadow{
   -webkit-box-shadow: 0 4px 10px #666;
@@ -9,36 +7,17 @@
   -o-box-shadow: 0 4px 10px #666;
   box-shadow: 0 4px 10px #666;
 }
-
+/*body{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 40px;
+}*/
 #flipbook{
 	margin: auto;
 }
-
-#one{
-	background-size: cover;
- 	background-repeat: no-repeat;
+#flipbook .page .sheet{
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 25px;
+	font-weight: bold;
+	font-variant: small-caps;
 }
-#two{
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-#three{
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-#four{
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-#five{
-	background-size: cover; 
-	background-repeat: no-repeat;
-}
-#six{
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-#seven{
-	background-size: cover;
-	background-repeat: no-repeat;
-} 
