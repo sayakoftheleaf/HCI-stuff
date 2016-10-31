@@ -8,30 +8,40 @@
 			height: 600,
 		});
 		make_pages();
-		connect();
+		apply_intervention();
+		console.log("the current page is "+ $("#flipbook").turn("page"));
+		//change_font(); 
 	}
 
-	function connect(){
-				console.log($("<div />").html());
-		var ws = new WebSocket("ws://localhost:9998/echo");//ws (websocket)
-
+	function apply_intervention(){ 
+		//console.log($("<div />").html());
+		var ws = new WebSocket("ws://localhost:9998/echo");
 		console.log(ws.readyState);
 		ws.onopen = function(){
 			console.log("websocket connection is opened");
 		};
 		ws.onmessage = function (evt){
 			var received_msg = evt.data;
-			$("#flipbook").css("font, Comic Sans  MS");
+			var page_number = String($("#flipbook").turn("page"));
+			$("#page1").css("font-weight", "bold");
 			alert("stop spacing out, you goob!");
 		}
 
 	}
+	/*function change_font(){
+		$( "#page1" ).click(function() {
+  			alert( "Handler for .click() called." );
+  			$("#page1").css("background-color", "yellow");
+  		});
+	}*/
 	function make_pages(){ 
 		for(i = 0; i < 7; i++){
 				console.log("hey  ");
 				switch(i){
 					case 0:
-						element = $("<div />",{"class": "hard"}).html(String(page1));
+						element = $("<div />").html("Page 1");
+						var $newdiv1 = $( "<div id='page1'>"+page1+"</div>" );
+						element.append($newdiv1);
 						break;
 					case 1:
 						element = $("<div />").html("Page 2");
@@ -60,7 +70,7 @@
 						break;
 					case 6:
 						element = $("<div />").html("Page 7");
-						var $newdiv1 = $( "<div id='page1'>"+page7+"</div>" );
+						var $newdiv1 = $( "<div class='sheet'id='page1'>"+page7+"</div>" );
 						element.append($newdiv1);
 						break;
 				}

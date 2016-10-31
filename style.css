@@ -14,20 +14,48 @@ body{
 	margin: auto;
 }
 #flipbook .page {
-	margin-left: 5px;
-	margin-right: 5px;
-	font-weight: bold;
+	background-color: white;
 	font-variant: small-caps;
 }
+#page1 {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
 #page2 {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 #page3 {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 #page4 {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 #page5 {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 #page6 {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 #page7 {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
