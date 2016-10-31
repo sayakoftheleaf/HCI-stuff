@@ -34,22 +34,34 @@
 						element = $("<div />",{"class": "hard"}).html(String(page1));
 						break;
 					case 1:
-						element = $("<div />").html(String(page2));
+						element = $("<div />").html("Page 2");
+						var $newdiv1 = $( "<div id='page2'>"+page2+"</div>" );
+						element.append($newdiv1);
 						break;
 					case 2:
-						element = $("<div />").html(String(page3));
+						element = $("<div />").html("Page 3");
+						var $newdiv1 = $( "<div id='page1'>"+page3+"</div>" );
+						element.append($newdiv1);
 						break;
 					case 3:
-						element = $("<div />").html(String(page4));
+						element = $("<div />").html("Page 4");
+						var $newdiv1 = $( "<div id='page1'>"+page4+"</div>" );
+						element.append($newdiv1);
 						break;
 					case 4:
-						element = $("<div />").html(String(page5));
+						element = $("<div />").html("Page 5");
+						var $newdiv1 = $( "<div id='page1'>"+page5+"</div>" );
+						element.append($newdiv1);
 						break;
 					case 5:
-						element = $("<div />").html(String(page6));
+						element = $("<div />").html("Page 6");
+						var $newdiv1 = $( "<div id='page1'>"+page6+"</div>" );
+						element.append($newdiv1);
 						break;
 					case 6:
-						element = $("<div />").html(String(page7));
+						element = $("<div />").html("Page 7");
+						var $newdiv1 = $( "<div id='page1'>"+page7+"</div>" );
+						element.append($newdiv1);
 						break;
 				}
 				//element = $("<div />").html(String(page2));

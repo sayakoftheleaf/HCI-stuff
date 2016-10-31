@@ -7,17 +7,27 @@
   -o-box-shadow: 0 4px 10px #666;
   box-shadow: 0 4px 10px #666;
 }
-/*body{
-	font-family: "Times New Roman", Times, serif;
-	font-size: 40px;
-}*/
+body{
+	background-color: gray; 
+}
 #flipbook{
 	margin: auto;
 }
-#flipbook .page .sheet{
+#flipbook .page {
 	margin-left: 5px;
 	margin-right: 5px;
-	font-size: 25px;
 	font-weight: bold;
 	font-variant: small-caps;
+}
+#page2 {
+}
+#page3 {
+}
+#page4 {
+}
+#page5 {
+}
+#page6 {
+}
+#page7 {
 }
