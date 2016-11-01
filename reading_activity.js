@@ -14,7 +14,6 @@
 	}
 
 	function apply_intervention(){ 
-		//console.log($("<div />").html());
 		var ws = new WebSocket("ws://localhost:9998/echo");
 		console.log(ws.readyState);
 		ws.onopen = function(){
@@ -23,15 +22,20 @@
 		ws.onmessage = function (evt){
 			var received_msg = evt.data;
 			var page_number = String($("#flipbook").turn("page"));
-			$("#page1").css("font-weight", "bold");
-			alert("stop spacing out, you goob!");
+			$("#page"+page_number).css("font-variant", "small-caps");
+			setTimeout(function(){ 
+				$("#page"+"page_number").css("font-weight", "normal");
+  			} , 3000 );
 		}
 
 	}
 	/*function change_font(){
-		$( "#page1" ).click(function() {
-  			alert( "Handler for .click() called." );
-  			$("#page1").css("background-color", "yellow");
+		var page_number = String($("#flipbook").turn("page"));
+		$( "#page"+page_number ).click(function() {
+			setTimeout( function(){ 
+				alert( "Handler for .click() called." );
+				$("#page1").css("background-color", "yellow");
+  			}  , 3000 );
   		});
 	}*/
 	function make_pages(){ 
@@ -76,14 +80,13 @@
 				}
 				//element = $("<div />").html(String(page2));
 				//element = $("<div />").html(String(page1));
-				console.log("here");
 				$("#flipbook").turn("addPage", element, i+1);
 		}
 	}
-var page1 = "<p> No man likes to acknowledge that he has made a mistake in the choice of his profession, and every man, worthy of the name, will row long against wind Line andtidebeforeheallowshimselftocryout,“Iam 5 baffled!”and  submitstobefloatedpassivelybackto land. From the first week of my residence in X—— I felt my occupation irksome. The thing itself— the work of copying and translating business-letters— was a dry and tedious task enough, but had that been all,Ishould long have borne withthenuisance;Iam not of an impatient nature, and influenced by th double desire of getting my living and justifying to myself and others the resolution I had taken to become a tradesman, I should have endured in silencetherustandcrampofmybestfaculties;I should not have whispered, even inwardly, that I longed for liberty; I should have pent in every sigh by which my heart might have ventured to intimate its distress under the closeness, smoke, monotony, and joylesstumultofBigbenClose,anditspantingdesire for freer and fresher scenes; I should have set up the image of Duty, the fetish of Perseverance, in my small bedroom at Mrs. King’s lodgings, and they two should have been my household gods, from whichmy darling, my cherished-in-secret, Imagination, the tender and the mighty, should never, either by softness or strength, have severed me. But this was not all; the antipathy which had sprung up between myself and my employer striking deeper root and spreadingdensershadedaily,excludedmefrom every glimpse of the sunshine of life; and I began to feel like a plant growing in humid darkness out of the slimy walls of a well. Antipathy is the only word which can express the feelingEdwardCrimsworthhadforme—afeeling,in a great measure, involuntary, and which was liable to be excited by every, the most trifling movement, look, or word of mine. My southern accent annoyed him; the degree of education evinced in my language irritatedhim;mypunctuality,industry,and accuracy, fixed his dislike, and gave it the high flavour and poignant relish of envy; he feared that I too should one day make a successful tradesman. Had I been in anything inferior to him,  <p/>";
-var page2 = "you are on page two";
-var page3 = "you are on page three";
-var page4 = "you are on page four";
+var page1 = "Reading Comprehension Test";
+var page2 = "Marie Curie was one of the most accomplished scientists in history. Together with her husband, Pierre, she discovered radium, an element widely used for treating cancer, and studied uranium and other radioactive substances. Pierre and Marie's amicable collaboration later helped to unlock the secrets of the atom. Marie was born in 1867 in Warsaw, Poland, where her father was a professor of physics. At an early age, she displayed a brilliant mind and a blithe personality. Her great exuberance for learning prompted her to continue with her studies after high school. She became disgruntled, however, when she learned that the university in Warsaw was closed to women. Determined to receive a higher education, she defiantly left Poland and in 1891 entered the Sorbonne, a French university, where she earned her master's degree and doctorate in physics.";
+var page3 = "Marie was fortunate to have studied at the Sorbonne with some of the greatest scientists of her day, one of whom was Pierre Curie. Marie and Pierre were married in 1895 and spent many productive years working together in the physics laboratory. A short time after they discovered radium, Pierre was killed by a horse-drawn wagon in 1906. Marie was stunned by this horrible misfortune and endured heartbreaking anguish. Despondently she recalled their close relationship and the joy that they had shared in scientific research. The fact that she had two young daughters to raise by herself greatly increased her distress. Curie's feeling of desolation finally began to fade when she was asked to succeed her husband as a physics professor at the Sorbonne. She was the first woman to be given a professorship at the world-famous university.";
+var page4 = "In 1911 she received the Nobel Prize in chemistry for isolating radium. Although Marie Curie eventually suffered a fatal illness from her long exposure to radium, she never became disillusioned about her work. Regardless of the consequences, she had dedicated herself to science and to revealing the mysteries of the physical world.";
 var page5 = "you are on page five";
 var page6 = "you are on page six";
 var page7 = "you are on page seven";
